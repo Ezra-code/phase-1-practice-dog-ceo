@@ -21,6 +21,16 @@ fetch(breedUrl)
         const li = document.createElement("li")
         li.innerHTML = item
         breed.appendChild(li)
+        li.addEventListener('click',()=>{
+            li.style.color =("green")
+        })
         console.log(item)
     } 
 })
+
+function filterBreeeds(){
+    let brid = document.getElementById("breed-dropdown")
+    brid.addEventListener('click', () => {
+        console.log(brid.value)
+    })
+}
